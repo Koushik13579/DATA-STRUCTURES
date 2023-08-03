@@ -1,15 +1,15 @@
 #include<stdio.h>
 int main()
 {
-    int array[100], search, c, number;
+    int array[100], search, c, n;
     printf("Enter the number of elements in array\n");
-    scanf("%d",&number);
-    printf("Enter %d numbers\n", number);
-    for ( c = 0 ; c < number ; c++ )
+    scanf("%d",&n);
+    printf("Enter %d numbers\n", n);
+    for ( c = 0 ; c < n ; c++ )
         scanf("%d",&array[c]);
     printf("Enter the number to search\n");
     scanf("%d",&search);
-    for ( c = 0 ; c < number ; c++ )
+    for ( c = 0 ; c < n ; c++ )
     {
         if ( array[c] == search )  
         {
@@ -17,7 +17,7 @@ int main()
             break;
         }
     }
-    if ( c == number )
+    if ( c == n )
         printf("%d is not present in array.\n", search);
     return 0;
 }
